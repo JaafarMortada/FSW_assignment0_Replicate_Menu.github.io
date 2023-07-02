@@ -127,12 +127,12 @@ summary::after {
     transition: 0.2s;
     margin-left: 2em;
     content: '\203A' ; /* chevron */
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 
   }
 
 details[open] summary::after {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
 
 
