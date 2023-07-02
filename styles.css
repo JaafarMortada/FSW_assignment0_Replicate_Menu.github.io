@@ -122,6 +122,8 @@ summary {
 
 summary::after {
     display: inline-block;
+    position: absolute;
+    right: 25%;
     transition: 0.2s;
     margin-left: 2em;
     content: '\203A' ; /* chevron */
@@ -169,6 +171,7 @@ table{
     color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
+    cursor: pointer;
 }
 
 .largeRow{
@@ -177,6 +180,7 @@ table{
     text-align: left;
     height: 5em;
     vertical-align:middle;
+    cursor: pointer;
 }
 
 .AddOnName{
