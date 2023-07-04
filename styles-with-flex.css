@@ -15,7 +15,7 @@ header {
     border-bottom-right-radius: 15px;
     z-index: 1; /* apparently thls stops the arrows of the summaty from overlapping with the header 
     (https://stackoverflow.com/a/5573029)*/
-    flex-direction: column;
+    flex-flow: column wrap;
 }
 
 .CoverboxLogo {
@@ -51,31 +51,35 @@ header {
     align-self: center;
 }
 
-.titleAndButton{
-    text-align: center;
+.title-Button-vat-find{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 0.1em;
+    margin: 1em 0 1em;
+}
+
+.title-Button{
+    display: flex;
+    height: 1.8em;
+    
 }
 .gobackButton{
-    display: inline-block;
     border: 0px;
     background-color: #242424;
-    margin-right: 0.2em;
     font-size: 1.5rem;
     cursor: pointer;
-    margin-bottom: 0px;
-
+    align-self: center;
 }
 .MenuTitle{
-    display: inline-block;
     color: #ffffff;
     font: 1.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 0px;
+    align-self: center;
 }
 
 .smalltextUnderTitle{
-    margin-top: 0px;
     color: #6d6d6d;
-    margin-top: 0px;
 }
 
 .findButton{
@@ -87,7 +91,6 @@ header {
     border-color: #ffffff;
     border-radius: 15px;
     border-width: 1px;
-    margin-bottom: 1em;
     cursor: pointer;
 }
 
