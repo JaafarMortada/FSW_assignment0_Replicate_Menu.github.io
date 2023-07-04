@@ -5,7 +5,7 @@ body {
 }
 /*testcomment*/
 header {
-    display: block;
+    display: flex;
     position: sticky;
     top: 0;
     background-color: black;
@@ -15,27 +15,16 @@ header {
     border-bottom-right-radius: 15px;
     z-index: 1; /* apparently thls stops the arrows of the summaty from overlapping with the header 
     (https://stackoverflow.com/a/5573029)*/
+    flex-direction: column;
 }
-
-.myheaderContents {
-    color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 1px;
-    height: 150px;
-    width: 100%;
-    text-align: center;
-}
-
 
 .CoverboxLogo {
-    display: block;
     opacity: 50%;
+    margin-top: 0.2%;
     color: #ffffff;
     cursor: pointer;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding-right: 88%;
-    padding-top: 2px;
-    font-size: 0.8em;
+    font-size: 1.8em;
 }
 
 /* https://blog.hubspot.com/website/remove-underline-from-links-css*/
@@ -59,7 +48,7 @@ header {
 .pizzahutLogoImg {
     height: 70px;
     width: 70px;
-    padding-top: 10px;
+    align-self: center;
 }
 
 .titleAndButton{
