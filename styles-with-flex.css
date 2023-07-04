@@ -95,32 +95,28 @@ header {
 }
 
 summary {
-    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5px;
+    margin: 5px 20% 0;
     cursor: pointer;
     background-color: #32373a;
     color: #ffffff;
-    height: 60px;
     font-size: 23px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 60px;
-    padding-left: 20px;
 }
 
 /* https://stackoverflow.com/a/69722686 */
 
 summary::after {
-    display: inline-block;
     position: absolute;
     right: 25%;
     transition: 0.2s;
     margin-left: 2em;
     content: '\203A' ; /* chevron */
     transform: rotate(90deg);
-
   }
 
 details[open] summary::after {
@@ -130,10 +126,9 @@ details[open] summary::after {
 
 .foodImages {
     display: block;
-    width: 61.5%;
+    width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    height: 250px;
 }
 
 table{
